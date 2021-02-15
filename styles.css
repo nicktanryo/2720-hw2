@@ -1,0 +1,159 @@
+/* SID: 1155122022
+Name: Nicholas Tanryo */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    --h3-color: #192965;
+    --h4-color: #bbcfff;
+
+    background-color: #effcef;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+body {
+    margin-bottom: 40px;;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+div.name {
+    padding-left: 0;
+}
+div.subject {
+    padding-right: 0;
+}
+
+h1, h2, h3, h4, h5, h6, ul {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: var(--h3-color);
+}
+
+h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: var(--h4-color);
+}
+
+p {
+    margin: 0;
+    padding: 0 10px 0 0;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+}
+
+input[type=radio] {
+    margin-right: 3px;
+}
+
+form {
+    margin-bottom: 10px;;
+}
+
+.form-check {
+    display: inline;
+    margin: 0 10px;
+}
+
+li.media {
+    margin: 20px 0;;
+    padding: 20px 10px 20px 10px;
+
+    border: solid darkslateblue 2px;
+    border-radius: 5px;;
+}
+
+li.media:hover {
+    border: double slategray 3px;
+}
+
+.content {
+    margin: 0 auto;
+    width: 85%;
+}
+
+i {
+    font-size: small;
+}
+
+svg {
+    float: left;
+    height: 100px;
+    width: 100px;
+    margin: auto 20px auto 10px;
+}
+
+svg > circle {
+    cx: 50px;
+    cy: 50px;
+    r: 40px;
+}
+
+circle.blue {
+    fill: blue;
+}
+
+circle.red {
+    fill: red;
+}
+
+circle.yellow {
+    fill: yellow;
+}
+
+circle.green {
+    fill: green;
+}
+
+.user-agent {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    h3 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 16px;;
+    }
+    .form-check {
+        display: block;
+    }
+
+    svg {
+        float: left;
+        height: 60px;
+        width: 60px;
+        margin: 0;
+    }
+    
+    svg > circle {
+        cx: 30px;
+        cy: 30px;
+        r: 20px;
+    }
+}

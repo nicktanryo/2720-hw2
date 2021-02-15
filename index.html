@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thread</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- SID: 1155122022
+    Name: Nicholas Tanryo -->
+</head>
+<body>
+    <header>
+        <h1>Thread</h1>
+    </header>
+
+    <div class="content w-75">
+        <ul id="comments" class="list-unstyled">
+            <li class="first media">
+                <svg>
+                    <circle class="blue"></circle>
+                </svg>
+                <div class="media-body">
+                  <h3>First Comment</h3>
+                  <h4>Nicholas Tanryo</h4>
+                  <p>
+                      Welcome to my thread, you are welcomed to insert comments and reply to them, this thread also can detect what browser you are using, your location, IP address, date of comments being posted and the operating system your device is using.
+                  </p>
+                    <a class="replybutton" href="#" onclick="returnForm(this)">Reply</a>
+                    <ul id="first-element-comment" class="list-unstyled">
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <form id="form" class="main-comment-form">
+          <div class="form-row">
+            <div class="name form-group col-xs-6">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="inputname" placeholder="Enter Name" autocomplete="off" required>
+             </div>
+            <div class="subject form-group col-xs-6">
+              <label for="subject">Subject</label>
+              <input type="text" class="form-control" id="inputsubject" placeholder="Enter Subject" autocomplete="off" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-check-label" for="comment">Your Comment</label>
+            <textarea type="checkbox" class="form-control" id="inputcomment" placeholder="Enter Comment" rows="4" required></textarea>
+          </div>
+          <div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" name="inputcolor" value="red">
+              <label class="form-check-label">Red</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" name="inputcolor" value="blue">
+              <label class="form-check-label">Blue</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" name="inputcolor" value="green">
+              <label class="form-check-label">Green</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" name="inputcolor" value="yellow">
+              <label class="form-check-label">Yellow</label>
+            </div>
+          </div><br>
+          <button id="addbutton" type="button" class="btn btn-primary">Add Comment</button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
